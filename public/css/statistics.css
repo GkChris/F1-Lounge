@@ -1,0 +1,102 @@
+.background_image_blured{
+    background-image: url('/images/jpg/backgrounds/6.jpg'); 
+}
+
+.page_info{
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.stats_options p{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    /* font-weight: 600; */
+}
+
+.stats_options i{
+    margin: .3rem 0 0 0;
+    padding: 0 0 0 0;
+}
+
+
+.stats_div{
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.stats_div_cont{
+    border: 1px solid black;
+    padding-top: 0;
+    width: 50%;
+    background-color: white;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.stats_div_cont p{
+    border-bottom: 2px solid black;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+/* MEDIA */
+
+@media only screen and (max-width: 1199.98px){
+
+    .page_info{
+        background-color: rgba(255,255,255,0.3);
+        width: 100%;
+        margin: auto;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .stats_drop{
+        width: 100%;
+    }
+
+    .stats_options{
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        margin: 1rem 0 1rem 0;
+        padding: .5rem 0 .5rem 0;
+        border: 1px solid black;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .page_info{
+        background-color: rgba(255,255,255,0.3);
+        width: 60%;
+        margin: auto;
+        border-radius: 0 0 5px 88px;
+    }
+
+    .stats_drop{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .stats_options{
+        width: 15%;
+        background-color: white;
+        text-align: center;
+        margin: 0 0 0 0;
+        padding: .5rem 0 .5rem 0;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-around;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+}

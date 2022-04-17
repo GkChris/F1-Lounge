@@ -1,0 +1,54 @@
+
+.small_option_bar{
+    margin: auto;
+    border-bottom: 2px solid black;
+    padding: 0 0 1rem 0;
+}
+
+.small_option_bar div{
+    cursor: pointer;
+    background-color:#F5F5F5;
+    margin: .5rem 0 .5rem 0;
+    padding: 0;
+    border: 1px solid grey;
+    border-radius: 15px 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.small_option_bar div p{
+    margin:auto;
+    padding: .2rem .4rem .2rem .4rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width: 1199.98px){
+    .small_option_bar{
+        width: 75%;
+    }
+
+    .small_option_bar div{
+        width:100%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .small_option_bar{
+        width: 75%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .small_option_bar div{
+        margin: 0 1rem 0 1rem;
+        width:13%;
+        transition: .3s;
+    }
+
+    .small_option_bar div:hover{
+        transform: scale(1.1);
+    }
+
+}

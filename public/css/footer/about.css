@@ -1,0 +1,57 @@
+.page_info{
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#cont_row{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#me_social{
+    display: flex;
+    justify-content: center;
+}
+
+#me{
+    width: 80%;
+    border: 2px solid silver;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.col-xl-6 h1{
+    color: white;
+    font-weight: 900;
+}
+.col-xl-6 h3{
+    font-weight: 600;
+}
+.col-xl-6 p{
+    color: white;
+}
+
+
+@media only screen and (max-width: 1199.98px){
+
+    .page_info{
+        background-color: rgba(255,255,255,0.3);
+        width: 100%;
+        margin: auto;
+        border-radius: 0 0 12px 12px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .page_info{
+        background-color: rgba(255,255,255,0.3);
+        width: 38%;
+        margin: auto;
+        border-radius: 0 0 5px 88px;
+    }
+
+}

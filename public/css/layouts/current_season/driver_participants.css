@@ -1,0 +1,128 @@
+.drivers_part_grid .col-xl-6{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+
+.driver_part_container{
+    height: 120px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: rgba(0, 0, 0, .6);
+    transition: .3s;
+    cursor: pointer;
+    display: flex;
+}
+
+
+.driver_part_container:hover{
+    transform: scale(1.1);
+    background-color: black;
+}
+
+.driver_image{
+    width: 35%;
+    border-right: 2px black solid;
+}
+
+.driver_image img{
+    margin: 6px 15% 6px 15%;
+    width: 70%;
+    height: 90%;
+    border: 1px solid grey;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.driver_info{
+    width: 64.98%;
+    color: white;
+}
+
+.driver_info p{
+    margin: 0 .5rem 0 .5rem;
+    color: #DCDCDC;
+}
+
+.driver_part_container:link {
+    text-decoration: none;
+    color: inherit;
+}
+  
+.driver_part_container:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.driver_part_container:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.driver_part_container:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.driver_info h4 i{
+    font-weight: 600;
+    font-size: medium;
+}
+
+@media only screen and (max-width: 767.98px){
+    .driver_part_container{
+        width: 100%;
+    }
+
+    .drivers_part_grid .col-xl-6{
+        width: 100%;
+        padding: 0;
+    }
+
+    #dob{
+        display: none;
+    }
+
+    .driver_info h4{
+        margin: .5rem .5rem .8rem .5rem;
+        border-bottom: 1px solid silver;
+        font-size: 14px;
+    }
+
+    .driver_info h4 i{
+        font-size: 11px;
+    }
+
+    .driver_info p{
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .driver_part_container{
+        width: 75%;
+    }
+
+    .drivers_part_grid .col-xl-6{
+        width: 100%;
+        padding: 0;
+    }
+
+    .driver_info h4{
+        margin: .5rem .5rem .8rem .5rem;
+        border-bottom: 1px solid silver;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .driver_part_container{
+        width: 75%;
+    }
+
+    .driver_info h4{
+        margin: .5rem .5rem .5rem .5rem;
+        border-bottom: 1px solid silver;
+    }
+}

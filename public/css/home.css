@@ -1,0 +1,121 @@
+.background_image_blured{
+    background-image: url('/images/jpg/backgrounds/6.jpg'); 
+}
+
+
+
+.home_bar{
+    background-color: rgba(255,255,255,0.2);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 15px;
+
+    padding: 0rem 0 2rem 0;
+    margin: 3rem 2rem 0 2rem;
+}
+
+.home_bar .col-xl-4{
+    margin: 3rem 0 0 0;
+}
+
+.testo p{
+    margin: 0 1rem 0 1rem;
+    white-space: nowrap;
+}
+
+
+.testo a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.testo a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.testo a:hover{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.testo a:active{
+    color: black;
+    text-decoration: none;
+}
+
+.welcome_info{
+    cursor: default;
+}
+
+.welcome_info h5{
+    font-style: italic;
+}
+
+.testo_content img{
+    width: 80%;
+    height: 70%;
+    margin: 1rem 0 0 0;
+    border: 1px solid grey;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+
+@media only screen and (max-width: 1199.98px){
+    .welcome_info h1{
+        margin: 1rem 3rem 0 3rem;
+    }
+
+    .welcome_info h4,h5{
+        margin: .8rem 1rem .5rem 1rem;
+    }
+
+    .testo{
+        height:100px;
+        width: 90%;
+    }
+
+    .testo_content{
+        /* position:relative;
+        top:21%; */
+        margin: 1.3rem 0 0 0;
+    }
+
+    .testo p{
+        font-size: 2rem;
+        border-bottom: 1px solid #000000;
+    }
+
+    .testo_content img{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .welcome_info h1{
+        margin: 1rem 0 0 0;
+    }
+
+    .welcome_info h4,h5{
+        margin: .8rem 0 .5rem 0;
+    }
+
+    .testo{
+        height:400px;
+        width: 75%;
+    }
+
+    .testo p{
+        font-size: 2.5rem;
+        border-bottom: 3px solid #000000;
+    }
+
+    .testo_content{
+        margin: 1rem 0 0 0;
+    }
+    
+}
+

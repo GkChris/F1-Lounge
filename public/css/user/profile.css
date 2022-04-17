@@ -1,0 +1,184 @@
+.page_info{
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.col-xl-6{
+    display: flex;
+    justify-content: center;
+}
+
+#p_cont{
+    border: 2px solid silver;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: white;
+    padding: 2rem 2rem 2rem 2rem;
+    max-height: 15rem;
+}
+
+#p_cont p{
+    padding: 0;
+    margin: 1rem 0 1rem 0;
+}
+
+.c_name_mail:hover{
+    background-color: #8B008B;
+}
+
+.c_name_mail p{
+    padding: 0;
+    margin: .5rem 1rem .5rem 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+.d_acc:hover{
+    background-color: #B22222;
+}
+
+.d_acc p{
+    padding: 0;
+    margin: .5rem 1rem .5rem 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+form div{
+    display: flex;
+    justify-content: center;
+}
+
+form div label{
+    font-weight: bold;
+    margin: 1.3rem 0 0 0;
+    padding: 0;
+}
+
+form div input{
+    padding: 0;
+    margin: .3rem 0 0 0;
+}
+
+#uname_form{
+    visibility: hidden;
+    transition-delay: .5s;
+}
+
+
+#username_field p, #mail_field p, #password_field p, #delete_field p{
+        position: relative;
+        top: 1%;
+        left: 1%;
+        margin: 0;
+        padding: 0;
+        text-decoration: underline;
+        font-style: italic;
+        cursor: pointer;
+        transition: .1s;
+        transition-delay: 0s;
+    }
+
+
+
+@media only screen and (max-width: 1199.98px){
+
+    .page_info{
+        background-color: rgba(255,255,255,0.3);
+        width: 100%;
+        margin: auto;
+        border-radius: 0 0 12px 12px;
+    }
+
+
+    #setUp_cont{
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .d_acc{
+        background-color: #FF4500;
+        border: 2px solid grey;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        margin: 0 20% 1rem 20%;
+        cursor: pointer;
+        text-align: center;
+        width: 60%;
+    }
+
+    .c_name_mail{
+        background-color: #191970;
+        border: 2px solid black;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        margin: 0 17% 1rem 17%;
+        cursor: pointer;
+        text-align: center;
+        width: 66%;
+    }
+
+    #username_field, #mail_field, #password_field, #delete_field{
+        width: 90%;
+        margin: 0 5% 1rem 5%;
+        height: 1px;
+        visibility: hidden;
+        background-color: white;
+        transition: .5s;
+        border: 2px solid silver;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .page_info{
+        background-color: rgba(255,255,255,0.3);
+        width: 40%;
+        margin: auto;
+        border-radius: 0 0 5px 88px;
+    }
+
+    
+    #setUp_cont{
+        width: 100%;
+    }
+
+
+    .d_acc{
+        background-color: #FF4500;
+        border: 2px solid grey;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        margin: 0 34% 1rem 34%;
+        cursor: pointer;
+        text-align: center;
+        width: 32%;
+    }
+
+
+    .c_name_mail{
+        background-color: #191970;
+        border: 2px solid black;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        margin: 0 31% 1rem 31%;
+        cursor: pointer;
+        text-align: center;
+        width: 38%;
+    }
+
+
+    #username_field, #mail_field, #password_field, #delete_field{
+        width: 70%;
+        margin: 0 15% 1rem 15%;
+        height: 1px;
+        visibility: hidden;
+        background-color: white;
+        transition: .5s;
+        border: 2px solid silver;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+}

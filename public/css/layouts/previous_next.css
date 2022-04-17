@@ -1,0 +1,26 @@
+#prev_next_desktop{
+    display: flex;
+    justify-content: space-between
+}
+
+
+#prev_desktop{
+    position: relative;
+    top: -1.8rem;
+    left: -2rem;
+}
+
+#next_desktop{
+    position: relative;
+    top: -1.8rem;
+    right: -2rem;
+}
+
+#prev_desktop a, #next_desktop a{
+    color: white;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+

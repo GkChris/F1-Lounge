@@ -1,0 +1,202 @@
+.background_image_blured{
+    background-image: url('/images/jpg/backgrounds/6.jpg'); 
+}
+
+.page_info{
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.a_cont a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.a_cont a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.a_cont a:hover{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.a_cont a:active{
+    color: black;
+    text-decoration: none;
+}
+
+.circuit_grid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.circuit_info{
+    width: 100%;
+    margin: 2rem 0 0 0;
+    text-align: center;
+    cursor: default;
+}
+
+
+
+
+.circuit_info h5:hover{
+    transform: scale(1.1);
+}
+
+.circuit_img{
+    width: 100%;
+}
+
+.circuit_img img{  
+    width: 100%;
+    background-position: center;
+    background-size: cover;    
+    border: 2px solid grey;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+.descript_cont h3{
+    margin: 2rem 1rem 0 1rem;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.descript_cont p{
+    margin: 2rem 1rem 1rem;
+    word-break:normal;
+    white-space: normal;
+}
+
+#source{
+    position: relative;
+    float: right;
+    margin: 2rem 1rem 1rem 1rem;
+}
+
+#circ_show_cont{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 1199.98px){
+
+    .page_info{
+        background-color: rgba(255,255,255,0.3);
+        width: 100%;
+        margin: auto;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .circuit_info h5{
+        width: 70%;
+        font-size: medium;
+        margin: 1.3rem auto 1.3rem auto;
+        padding: .5rem 1rem .5rem 1rem;
+        background-color: white;
+        color: black;
+        border: 1px solid grey;
+        border-radius: 10px 25px;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    #for_info_p{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .gp_info{
+        margin: 3.5rem 0rem 1rem 0rem;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+    }
+    
+    .gp_info .p_cont{
+        margin: 1.5rem 1rem 0 1rem;
+    }
+
+        
+    .p_cont{
+        width: 100%;
+    }
+
+    .descript_cont{
+        width:100%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .page_info{
+        background-color: rgba(255,255,255,0.3);
+        width: 60%;
+        margin: auto;
+        border-radius: 0 0 5px 88px;
+    }
+
+    .a_cont{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 2rem;
+    }
+
+    .a_cont h5{
+        /* position: relative;
+        float: right; */
+        width: 100%;
+        margin: 1rem;
+        padding: .5rem 1rem .5rem 1rem;
+        background-color: white;
+        color: black;
+        border: 1px solid grey;
+        border-radius: 10px 25px;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+
+
+    #for_info_p{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .gp_info{
+        margin: 3.5rem 0rem 1rem 0rem;
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+    }
+    
+    .gp_info .p_cont{
+        margin: 1.5rem 1rem 0 1rem;
+    }
+
+    
+    .p_cont{
+        width: 30%;
+    }
+
+    .descript_cont{
+        width:69.98%;
+        border-left: 2px solid black;
+    }
+
+}

@@ -1,0 +1,231 @@
+.podium_overview{
+    width: 100%;
+    margin: 5rem 0 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.podium_info{
+    width: 90%;
+    display: flex;
+}
+
+
+.testo a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.testo a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.testo a:hover{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.testo a:active{
+    color: black;
+    text-decoration: none;
+}
+
+
+.descript_cont h3{
+    margin: 2rem 1rem 0 1rem;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.descript_cont p{
+    margin: 2rem 1rem 1rem;
+    word-break:normal;
+    white-space: normal;
+}
+
+#source{
+    position: relative;
+    float: right;
+    margin: 2rem 1rem 1rem 1rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 1199.98px){
+
+    .drivers_podium{
+        margin: 2rem 0 0 0;
+        width: 100%;
+    }
+    
+    .constructor_winner{
+        width: 100%;
+    }
+
+    .drivers_podium .testo{
+        margin: 1rem 0 0 0;
+        width: 100%;
+        height: 250px;
+    }
+    
+    
+    .constructor_winner .testo{
+        margin: 1rem 0 0 0;
+        width: 100%;
+        height: 250px;
+    }
+    
+    .testo a img{
+        margin: .4rem 0 0 0;
+        width: 65%;
+        height: 60%;
+        border-radius: 10%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .constructor_winner .testo a img{
+        margin: .7rem 0 0 0;
+        width: 75%;
+        height: 55%;
+    }
+
+    .testo p{
+        margin: 1rem 0 0 0;
+        font-size: 1.3rem;
+    }
+    
+    .testo h5{
+        margin: .8rem 0 0 0;
+        font-size: 1.1rem;
+    }
+    
+    .testo h5 i{
+        font-size: .9rem;
+        font-style: normal;
+    }
+
+    #for_info_p{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .gp_info{
+        margin: 3.5rem 0rem 1rem 0rem;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+    }
+    
+    .gp_info .p_cont{
+        margin: 1.5rem 1rem 0 1rem;
+    }
+
+        
+    .p_cont{
+        width: 100%;
+    }
+
+    .descript_cont{
+        width:100%;
+    }
+    
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .drivers_podium{
+        padding: 2rem 0 0 0;
+        width: 65%;
+        display: flex;
+        justify-content: center;
+        border: 2px solid silver;
+        border-radius: 1%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        background-image: url('/images/jpg/podium/podium.jpg'); 
+        background-size: cover; 
+    }
+    
+    .constructor_winner{
+        width: 34.98%;
+        display: flex;
+        justify-content: center;
+        padding: 3.8rem 0 1.8rem 0;
+        margin: .2rem 0 .2rem 0
+    }
+
+    .drivers_podium .testo{
+        width: 100%;
+        height: 250px;
+    }
+    
+    
+    .constructor_winner .testo{
+        width: 100%;
+        height: 250px;
+    }
+    
+    .testo a img{
+        margin: .4rem 0 0 0;
+        width: 75%;
+        height: 60%;
+        border-radius: 10%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .testo p{
+        margin: 1rem 0 0 0;
+        font-size: 1.3rem;
+    }
+    
+    .testo h5{
+        margin: .8rem 0 0 0;
+        font-size: .9rem;
+    }
+    
+    .testo h5 i{
+        font-size: .7rem;
+        font-style: normal;
+    }
+
+    #place_2{
+        margin: 3rem 0 0 0;
+    }
+
+    #place_3{
+        margin: 5rem 0 2rem 0;
+    }
+
+    #for_info_p{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .gp_info{
+        margin: 3.5rem 0rem 1rem 0rem;
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+    }
+    
+    .gp_info .p_cont{
+        margin: 1.5rem 1rem 0 1rem;
+    }
+
+    
+    .p_cont{
+        width: 30%;
+    }
+
+    .descript_cont{
+        width:69.98%;
+        border-left: 2px solid black;
+    }
+}

@@ -1,0 +1,257 @@
+.index_sortying p{
+    margin: 0 0 .2rem 0;
+    text-decoration: underline;
+}
+
+#sorting_value{
+    margin: .6rem .4rem 0 0;
+    padding: .5rem .5rem 0 0;
+    border-right: 1px solid black;
+    font-weight: 600;
+    cursor: default;
+}
+
+.sort_div{
+    margin: .8rem 0 .4rem 0;
+    padding: .2rem .3rem .1rem .3rem;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: default;
+}
+
+.index_sortying i{
+    margin: .3rem .3rem 0 0;
+}
+
+
+
+.season_rounds p{
+    font-weight: 600;
+    padding: .1rem .3rem .1rem .3rem;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 25%;
+}
+
+.season_rounds p:hover{
+    transform: scale(1.1);
+}
+
+.season_rounds i{
+    cursor: default;
+    
+}
+
+
+.season_rounds a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.season_rounds a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.season_rounds a:hover{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.season_rounds a:active{
+    color: black;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 1199.98px){
+
+    .page_info{
+        background-color: rgba(255,255,255,0.3);
+        width: 100%;
+        margin: auto;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .season_rounds p{
+        margin: .6rem 0 .5rem 0;
+    }
+
+    .season_rounds i{
+        margin: 0 0 0 4%;
+    }
+    
+    .index_sortying{
+        margin: 0 1rem 0 0;
+        display: flex;
+        justify-content: center;
+        padding: 0 .5rem 0 .5rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 399.98px) {
+
+    .season_rounds{
+        width: 100%;
+        margin: .8rem 0 2rem 0;
+    }
+
+    .season_rounds p{
+        margin: .6rem 0 .5rem 0;
+    }
+
+    .season_rounds i{
+        margin: 0 0 0 4%;
+    }
+    
+    .index_sortying{
+        margin: 0 1rem 0 0;
+        display: flex;
+        justify-content: center;
+        padding: 0 .5rem 0 .5rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 400px) {
+
+    .season_rounds{
+        width: 80%;
+        margin: .8rem 0 2rem 0;
+    }
+
+    .season_rounds p{
+        margin: .6rem 0 .5rem 0;
+    }
+
+    .season_rounds i{
+        margin: 0 0 0 4%;
+    }
+    
+    .index_sortying{
+        margin: 0 1rem 0 0;
+        display: flex;
+        justify-content: center;
+        padding: 0 .5rem 0 .5rem;
+    }
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .season_rounds{
+        width: 70%;
+        margin: .8rem 0 2rem 0;
+    }
+
+    .season_rounds p{
+        margin: .6rem 0 .5rem 0;
+    }
+
+    .season_rounds i{
+        margin: 0 0 0 4%;
+    }
+    
+    .index_sortying{
+        margin: 0 1rem 0 0;
+        display: flex;
+        justify-content: center;
+        padding: 0 .5rem 0 .5rem;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .season_rounds{
+        width: 50%;
+        margin: .8rem 0 2rem 0;
+    }
+
+    .season_rounds p{
+        margin: .6rem 0 .5rem 0;
+    }
+
+    .season_rounds i{
+        margin: 0 0 0 4%;
+    }
+    
+    .index_sortying{
+        margin: 0 1rem 0 0;
+        display: flex;
+        justify-content: center;
+        padding: 0 .5rem 0 .5rem;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .season_rounds{
+        width: 40%;
+        margin: .8rem 0 2rem 0;
+    }
+
+    .season_rounds p{
+        margin: .6rem 0 .5rem 0;
+    }
+
+    .season_rounds i{
+        margin: 0 0 0 4%;
+    }
+    
+    .index_sortying{
+        margin: 0 1rem 0 0;
+        display: flex;
+        justify-content: center;
+        padding: 0 .5rem 0 .5rem;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .season_rounds{
+        width: 100%;
+        margin: .8rem 0 0 3rem;
+        font-size: small;
+    }
+
+    .season_rounds p{
+        margin: .6rem 0 .5rem 20%;
+    }
+
+    .season_rounds i{
+        margin: 0 0 0 22%;
+    }
+    
+    .index_sortying{
+        position: relative;
+        float: right;
+        margin: 0 30% 0 0;
+        display: flex;
+        justify-content: center;
+        padding: 0 .5rem 0 .5rem;
+    }
+
+}
+
+
+
+
+

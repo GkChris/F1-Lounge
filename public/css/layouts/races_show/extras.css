@@ -1,0 +1,208 @@
+.col-xl-6{
+    margin: 2rem 0 0 0;
+}
+
+#constructor_current{
+    display: none;
+}
+
+#constructor_season{
+    display: none;
+}
+
+.for_overflow{
+    overflow: auto;
+}
+
+
+
+.current_info h4{
+    background-color: rgba(0,0,0,0.3);
+    border: 1px solid silver;
+    border-radius: 20px;
+    text-decoration:underline;
+    font-style: italic;
+    cursor: default;
+    color: white;
+}
+
+.current_info p{
+    margin: .5rem 0 .5rem 0;
+    padding: .5rem 1rem .5rem 1rem;
+    background-color: #4682B4;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+    color: white;
+}
+
+.current_info p:hover{
+    transform: scale(1.1);
+}
+
+.season_info h4{
+    padding: .8rem 1rem 0 1rem;
+    background-color: rgba(0,0,0,0.3);
+    border: 1px solid silver;
+    border-radius: 20px;
+    text-decoration:underline;
+    font-style: italic;
+    cursor: default;
+    color: white;
+}
+
+.season_info p{
+    margin: .5rem 0 .5rem 0;
+    padding: .5rem 1rem .5rem 1rem;
+    background-color: #4682B4;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+    color: white;
+}
+
+.season_info p:hover{
+    transform: scale(1.1);
+}
+
+
+#constructors_part_grid{
+    display: none;
+}
+
+.participants_menu{
+    width: 100%;
+}
+
+
+.participants_menu p{
+    margin: 2rem 0 .5rem 10%;
+    padding: .5rem 0 .5rem 1rem;
+    background-color: #4682B4;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+    color: white;
+}
+
+.participants_menu p:hover{
+    transform: scale(1.1);
+}
+
+#drivers_part{
+    width: 100%;
+}
+
+#constructors_part{
+    width: 100%;
+}
+
+.circuit_grid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.circuit_info{
+    width: 100%;
+    margin: 2rem 0 0 0;
+    text-align: center;
+    cursor: default;
+}
+
+
+
+
+.circuit_info h5:hover{
+    transform: scale(1.1);
+}
+
+.circuit_img{
+    width: 100%;
+}
+
+.circuit_img img{  
+    width: 100%;
+    background-position: center;
+    background-size: cover;    
+    border: 2px solid grey;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1199.98px){
+    .participants_menu p{
+        width: 90% ;
+    }
+
+    .current_info h4{
+        padding: .8rem 1rem .5rem 1rem;
+    }
+
+    .season_info h4{
+        padding: .8rem 1rem .5rem 1rem;
+    }
+
+    .circuit_info h5{
+        width: 70%;
+        font-size: medium;
+        margin: 1.3rem auto 1.3rem auto;
+        padding: .5rem 1rem .5rem 1rem;
+        background-color: white;
+        color: black;
+        border: 1px solid grey;
+        border-radius: 10px 25px;
+        cursor: pointer;
+        transition: .3s;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #current_col{
+        border-right: 2px solid silver;
+    }
+
+    .current_info{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .current_info h4{
+        padding: .8rem 1rem 0 1rem;
+    }
+
+    
+    .season_info h4{
+        padding: .8rem 1rem 0 1rem;
+    }
+
+    .season_info{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .participants_menu p{
+        width: 20% ;
+    }
+
+    .circuit_info h5{
+        position: relative;
+        float: right;
+        width: 25%;
+        margin: 1rem;
+        padding: .5rem 1rem .5rem 1rem;
+        background-color: white;
+        color: black;
+        border: 1px solid grey;
+        border-radius: 10px 25px;
+        cursor: pointer;
+        transition: .3s;
+    }
+}

@@ -1,0 +1,33 @@
+.page_info{
+    cursor: default;
+}
+
+.page_info h5{
+    font-style: italic;
+}
+
+
+
+
+@media only screen and (max-width: 1199.98px){
+    .page_info h1{
+        margin: 1rem 3rem 0 3rem;
+    }
+
+    .page_info h4,h5{
+        margin: .8rem 1rem .5rem 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .page_info h1{
+        margin: 1rem 0 0 0;
+    }
+
+    .page_info h4,h5{
+        margin: .8rem 0 .5rem 0;
+    }
+
+    
+}
