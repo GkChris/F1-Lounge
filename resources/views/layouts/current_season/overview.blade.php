@@ -82,6 +82,7 @@
                             <img id="con_img" src="/images/jpg/constructors/{{ $championTeam->constructorRef }}.jpg" onerror="this.onerror=null;this.src='/images/jpg/drivers/not_found.jpg';">
                             
                     </div></a>
+                    <p>{{ $championTeam->constructorRef }}</p>
                 @endif
             @endforeach
         </div>
@@ -144,5 +145,5 @@
         </div>
     </div>
 
-    <p>{{ $championTeam->constructorRef }}</p>
+    
 </div>
