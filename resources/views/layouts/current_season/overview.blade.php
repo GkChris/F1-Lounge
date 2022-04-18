@@ -80,7 +80,7 @@
                         <h5>{{ $championTeam->name }}</h5>
                         
                             <img id="con_img" src="/images/jpg/constructors/{{ $championTeam->constructorRef }}.jpg" onerror="this.onerror=null;this.src='/images/jpg/drivers/not_found.jpg';">
-                            <p>{{ $championTeam->constructorRef }}</p>
+                            
                     </div></a>
                 @endif
             @endforeach
@@ -144,4 +144,5 @@
         </div>
     </div>
 
+    <p>{{ $championTeam->constructorRef }}</p>
 </div>
