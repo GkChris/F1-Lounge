@@ -11,22 +11,22 @@ class ReportController extends Controller
 {
     public function report(Request $request){
 
+        if(Auth::check()){
+            $user = Auth::user();
+            $forId = new reports;
+            $last_reportId = $forId->last_reportId();
+            
+            //[[POST AREA]]
+            $report = new reports;
+            $report->repId = $last_reportId+1;
+            $report->comment = $request->report_comment;
+            $report->id = $user->id;
+            $report->save();
+            return redirect()->back()->with('success', 'Your report was sent successfully!');  
+        }else{
+            return redirect()->back()->withErrors(['msg' => 'You need to log in to submit a report!']);
+        }
 
-
-        $user = Auth::user();
-        
-        $forId = new reports;
-        $last_reportId = $forId->last_reportId();
-        
-        //[[POST AREA]]
-        $report = new reports;
-        $report->repId = $last_reportId+1;
-        $report->comment = $request->report_comment;
-        $report->id = $user->id;
-        $report->save();
-          
-        return redirect()->back()->with('success', 'Your report was sent successfully!');  
-    
         
     }
 }

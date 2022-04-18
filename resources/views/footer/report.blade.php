@@ -53,7 +53,11 @@
         {{-- inner container --}}
         <div class="container_box_content d-flex justify-content-center">
             <div class="container_box_box">
-
+                @if($errors->any())
+                    <div class="alert alert-danger">
+                        {{$errors->first()}}
+                    </div>
+                @endif
                 @if (\Session::has('success'))
                     <div class="alert alert-success">
                         <div>
