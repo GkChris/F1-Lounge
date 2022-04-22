@@ -12,14 +12,30 @@ class SearchController extends Controller
     public function driverSearch(Request $request){
 
         $input = $request->value;
+        if($input != ''){
+            $input2 = explode(" ",$input);
+       
+            if(count($input2) == 1){
+                $data = DB::table('drivers')
+                ->select('driverRef','forename', 'surname', 'nationality')
+                ->Where('forename','LIKE','%'.$input."%")
+                ->orWhere('surname','LIKE','%'.$input."%")
+                ->orWhere('nationality','LIKE','%'.$input."%")
+                ->get();
+            }elseif(count($input2) == 2){
+                $data = DB::table('drivers')
+                ->select('driverRef','forename', 'surname', 'nationality')
+                ->Where('forename','LIKE','%'.$input2[0]."%")
+                ->Where('surname','LIKE','%'.$input2[1]."%")
+                ->get();
+            }else{
+                $data = null;
+            }
+        }else{
+            $data = null;
+        }
 
-        $data = DB::table('drivers')
-        ->select('driverRef','forename', 'surname', 'nationality')
-        ->Where('forename','LIKE','%'.$input."%")
-        ->orWhere('surname','LIKE','%'.$input."%")
-        ->orWhere('nationality','LIKE','%'.$input."%")
-        ->get();
-
+       
 
         return $data;
 

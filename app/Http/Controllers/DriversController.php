@@ -19,14 +19,14 @@ class DriversController extends Controller
         // return $allDrivers;
 
         $data2 = new drivers;
-        $allDriversByCountry = $data2->allDriversByCountry();
-        // return $allDriversByCountry;
+        $allDriversByYear = $data2->allDriversByYear();
+        // return $allDriversByYear;
         
 
         $data3 = new drivers;
         $data4 = new drivers;
         $data5 = new driver_descriptions;
-        foreach ($allDriversByCountry as $driver){
+        foreach ($allDriversByYear as $driver){
             $thisDriverDebut = $data3->thisDriverDebut($driver->driverId);
             $thisDriverLastRace = $data4->thisDriverLastRace($driver->driverId);
             $thisDriverDescriptions = $data5->thisDriverDescriptions($driver->driverId);
@@ -41,7 +41,7 @@ class DriversController extends Controller
         $allDriversDistinctCountries = $data6->allDriversDistinctCountries();
         // return $allDriversDistinctCountries;
 
-        return view('drivers.index', compact('allDrivers', 'allDriversByCountry', 'allDriversDistinctCountries'));
+        return view('drivers.index', compact('allDrivers', 'allDriversByYear', 'allDriversDistinctCountries'));
     }
 
 

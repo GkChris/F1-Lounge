@@ -158,14 +158,14 @@ h1 a:hover{
                     </div>
                 @endif
 
-
+                
                 {{-- previous next --}}
                 @if ($agent->isDesktop()) 
                 <div id="prev_next_desktop">
                     @if ($thisRace->raceId != $thisFirstRace[0]->raceId)
                         <div id="prev_desktop"><a href="{{ $thisRace->round - 1 }}">Previous Race</a></div>
                     @endif
-                    @if ($thisRace->raceId != $thisLastRace[0]->raceId)
+                    @if ($thisRace->raceId != $thisLastRace[0]->raceId && !$isFinalOfCurrent)
                         <div id="next_desktop"><a href="{{ $thisRace->round + 1 }}">Next Race</a></div>
                     @endif
                 </div>
@@ -178,7 +178,7 @@ h1 a:hover{
                         @if ($thisRace->raceId != $thisFirstRace[0]->raceId)
                             <div class="prev_next_mobile_subdiv"><a href="{{ $thisRace->round - 1 }}">Previous Race</a></div>
                         @endif
-                        @if ($thisRace->raceId != $thisLastRace[0]->raceId)
+                        @if ($thisRace->raceId != $thisLastRace[0]->raceId && !$isFinalOfCurrent)
                             <div class="prev_next_mobile_subdiv"><a href="{{ $thisRace->round + 1 }}">Next Race</a></div>
                         @endif
                     </div>

@@ -1,5 +1,5 @@
 <div class="row drivers_part_grid">
-    @foreach ($allDriversByCountry as $driver)
+    @foreach ($allDriversByYear as $driver)
     @if (isset($driver->firstRace))
         <div class="col-xl-6">
             <a href="/drivers/{{ $driver->driverRef }}" class="driver_part_container">

@@ -38,7 +38,6 @@
                     @if (isset($thisWeatherData))
                         <p style="color: silver;">Weather: {{ $thisWeatherData['Weather'] }}</p>
                         <p style="color: silver;">Temperature: {{ $thisWeatherData['Temperature'] }}</p>
-                        <p style="color: silver;">Temperature: {{ $thisWeatherData['Feels Like'] }}</p>
                         <p style="color: silver;">Wind speed: {{ $thisWeatherData['Wind'] }}</p>
                         <p style="color: silver;">Humidity: {{ $thisWeatherData['Humidity'] }}</p>
                         <p style="color: silver;">Cloud percentage: {{ $thisWeatherData['Clouds'] }}</p>

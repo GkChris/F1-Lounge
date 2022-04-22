@@ -24,6 +24,8 @@ function openSearch()
 
         xhr.onload = function () {
             const json = JSON.parse(xhr.responseText);
+
+            // alert(xhr.responseText);
         
             for (let i = 0; i < json.length; i++) {
                 document.getElementById('result_box').innerHTML += '<a href="/drivers/'+json[i].driverRef+'"><strong>'+json[i].forename+' '+json[i].surname+'</strong> ('+json[i].nationality+')</a></br>';

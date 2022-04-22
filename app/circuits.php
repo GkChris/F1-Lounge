@@ -5,6 +5,8 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Collection;
 
 class circuits extends Model
 {
@@ -46,7 +48,42 @@ class circuits extends Model
 
     public function allCircuitsByCountry(){      //return all circuits
         $data = DB::table('Circuits')->orderBy('country')->paginate(10);
-        return $data;
+
+        $data = DB::table('Circuits')->get();
+        foreach($data as $circuit){
+
+            $races = DB::table('races')
+            ->select('year', 'round')
+            ->where(['circuitId' => $circuit->circuitId])
+            ->orderBy('year', 'desc')
+            ->take(1)
+            ->get();
+
+
+            if(isset($races[0])){
+                $circuit->lastRace = $races[0]->year;
+            }
+            
+            
+        }
+
+
+        Collection::macro('paginate', function($perPage, $total = null, $page = null, $pageName = 'page') {
+            $page = $page ?: LengthAwarePaginator::resolveCurrentPage($pageName);
+            return new LengthAwarePaginator(
+                $this->forPage($page, $perPage),
+                $total ?: $this->count(),
+                $perPage,
+                $page,
+                [
+                    'path' => LengthAwarePaginator::resolveCurrentPath(),
+                    'pageName' => $pageName,
+                ]
+            );
+        });
+
+        return $data->sortByDesc('lastRace')->paginate(10);
+        
     }
 
     public function thisCircuit($id){       //return specific circuit

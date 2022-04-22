@@ -1,4 +1,5 @@
 @extends('layouts.blured_background_image')
+<script src="{{ asset('js/contact.js') }}" defer></script>
 <link href="{{ asset('/css/footer/contact.css') }}" rel="stylesheet" type="text/css" />
 <link href="{{ asset('/css/layouts/container_box.css') }}" rel="stylesheet" type="text/css" />
 <link href="{{ asset('/css/layouts/page_info.css') }}" rel="stylesheet" type="text/css" />
@@ -57,14 +58,14 @@
                 <div class="row">
                     <div class="col-xl-6">
                         <h3>Contact via email</h3>
-                        <p id="email">formula1lounge@gmail.com</p>
+                        <p id="email">theformula1lounge@gmail.com</p>
                     </div>
                     <div class="col-xl-6">
                         <h3>Contact via Social Media</h3>
                         <div class="fb">
                             <div class="row">
                                 <div class="col-6">
-                                    <a href="">Facebook</a>
+                                    <a href="#" onclick="thealert()">Facebook</a>
                                 </div>
                                 <div class="col-6">  
                                     <img src="/images/png/contact/fb.png">
@@ -74,7 +75,7 @@
                         <div class="ig">
                             <div class="row">
                                 <div class="col-6">
-                                    <a href="">Instagram</a>
+                                    <a href="#" onclick="thealert()">Instagram</a>
                                 </div>
                                 <div class="col-6"> 
                                     <img src="/images/png/contact/ig.png">
@@ -84,7 +85,7 @@
                         <div class="tw">
                             <div class="row">
                                 <div class="col-6">
-                                    <a href="">Twitter</a>
+                                    <a href="#" onclick="thealert()">Twitter</a>
                                 </div>
                                 <div class="col-6">
                                     <img src="/images/png/contact/tw.png">

@@ -6,6 +6,9 @@ use App\constructors;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
 
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Collection;
+
 class constructors extends Model
 {
     protected $fillable = [
@@ -67,7 +70,50 @@ class constructors extends Model
 
         $data = DB::table('Constructors')->orderBy('nationality')->paginate(10);
 
-        return $data;
+        $data = DB::table('Constructors')->get();
+        foreach($data as $constructor){
+            $results = DB::table('results')
+            ->select('raceId')
+            ->where(['constructorId' => $constructor->constructorId])
+            ->orderBy('raceId', 'desc')
+            ->take(999)
+            ->get();
+            $racesId = [];
+            foreach($results as $res){
+                array_push($racesId, $res->raceId);
+            }
+
+            $races = DB::table('races')
+            ->select('year')
+            ->whereIn('raceId', $racesId)
+            ->orderBy('year', 'desc')
+            ->take(1)
+            ->get();
+
+
+            if(isset($races[0])){
+                $constructor->lastRace = $races[0]->year;
+            }
+            
+            
+        }
+
+
+        Collection::macro('paginate', function($perPage, $total = null, $page = null, $pageName = 'page') {
+            $page = $page ?: LengthAwarePaginator::resolveCurrentPage($pageName);
+            return new LengthAwarePaginator(
+                $this->forPage($page, $perPage),
+                $total ?: $this->count(),
+                $perPage,
+                $page,
+                [
+                    'path' => LengthAwarePaginator::resolveCurrentPath(),
+                    'pageName' => $pageName,
+                ]
+            );
+        });
+
+        return $data->sortByDesc('lastRace')->paginate(10);
     }
 
 

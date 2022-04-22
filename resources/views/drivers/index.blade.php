@@ -87,7 +87,7 @@
                 <div class="row">
                     <div class="toLink">
                         <div class="paginator">
-                            {{ $allDriversByCountry->links() }}
+                            {{ $allDriversByYear->links() }}
                         </div>
                     </div>
                     

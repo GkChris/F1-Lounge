@@ -62,9 +62,9 @@ class drivers extends Model
         return $data;
     }
 
-    public function allDriversByCountry(){
+    public function allDriversByYear(){
 
-        $data = DB::table('Drivers')->orderBy('nationality')->paginate(10);
+        $data = DB::table('Drivers')->orderBy('dob', 'desc')->paginate(10);
 
         return $data;
     }
