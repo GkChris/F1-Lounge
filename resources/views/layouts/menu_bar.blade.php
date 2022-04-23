@@ -9,7 +9,7 @@
             <li><a href="/drivers"><p>Drivers</p></a></li>
             <li><a href="/constructors"><p>Constructors</p></a></li>
             <li><a href="/circuits"><p>Circuits</p></a></li>
-            <li><a href="statistics"><p>Statistics</p></a></li>
+            <li><a href="/statistics"><p>Statistics</p></a></li>
         </ul>
     </div>
 </div>
