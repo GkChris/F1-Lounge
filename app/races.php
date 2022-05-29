@@ -183,7 +183,7 @@ class races extends Model
         // date_default_timezone_set('Europe/London');
         // $date = date('Y/m/d', time());
         // $date = str_replace("/", '-', $date );
-        date_default_timezone_set('Europe/London');
+        date_default_timezone_set('UTC');
         $date = date('Y-m-d', time());
         
 
@@ -278,7 +278,7 @@ class races extends Model
     public function nextRace($seasons){
 
         // Change the line below to your timezone!
-        date_default_timezone_set('Europe/London');
+        date_default_timezone_set('UTC');
         $date = date('Y/m/d', time());
         $date = str_replace("/", '-', $date );
         

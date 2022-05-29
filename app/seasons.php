@@ -93,7 +93,7 @@ class seasons extends Model
         //     return '-';
         // }
 
-        date_default_timezone_set('Europe/London');
+        date_default_timezone_set('UTC');
         $date = date('Y-m-d', time());
         
 
@@ -150,7 +150,7 @@ class seasons extends Model
         // ->orderBy('date', 'desc')
         // ->take(1)
         // ->get();
-        date_default_timezone_set('Europe/London');
+        date_default_timezone_set('UTC');
         $date = date('Y-m-d', time());
         
 
@@ -207,14 +207,15 @@ class seasons extends Model
 
     public function thisNextGpCountdown(){
         // Change the line below to your timezone!
-        date_default_timezone_set('Europe/London');
-        $date = date('Y-m-d', time());
+        date_default_timezone_set('UTC');
+        $daydate = date('Y-m-d', time());
+        $date = date('Y-m-d H:i:s', time());
         // $date = '2022-03-26 13:00:00';
 
 
         $raceDate = DB::table('races')
         ->select('races.date', 'races.time')
-        ->whereDate('date', '>=', $date)
+        ->whereDate('date', '>=', $daydate)
         ->orderBy('date', 'asc')
         ->take(1)
         ->get();
@@ -224,8 +225,8 @@ class seasons extends Model
         $diff=date_diff($date1,$date2);
 
         
-
-        return $diff->format("%a day(s), %h hour(s)");
+   
+        return $diff->format("%a day(s), %H hour(s), %i minute(s)");
     }
 
 
