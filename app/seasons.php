@@ -65,53 +65,129 @@ class seasons extends Model
 
     public function currentSeasonRound($seasons){
 
-        // Change the line below to your timezone!
-        date_default_timezone_set('Europe/London');
-        $date = date('Y/m/d', time());
-        $date = str_replace("/", '-', $date );
-        // $date = '2022-03-26';
+        // // Change the line below to your timezone!
+        // date_default_timezone_set('Europe/London');
+        // $date = date('Y/m/d', time());
+        // $date = str_replace("/", '-', $date );
+        // // $date = '2022-03-26';
 
-        $round = DB::table('races')
-        ->select('races.round')
+        // $round = DB::table('races')
+        // ->select('races.round')
+        // ->where(['year' => $seasons])
+        // ->whereDate('date', '<=', $date)
+        // ->orderBy('round', 'desc')
+        // ->take(1)
+        // ->get();
+
+        // $round2 = DB::table('races')
+        // ->select('races.round')
+        // ->where(['year' => $seasons])
+        // ->orderBy('round', 'desc')
+        // ->take(1)
+        // ->get();
+
+
+        // if($round < $round2){
+        //     return $round[0]->round+1;
+        // }else{
+        //     return '-';
+        // }
+
+        date_default_timezone_set('Europe/London');
+        $date = date('Y-m-d', time());
+        
+
+        $raceId = DB::table('races')
+        ->select('races.raceId', 'races.time', 'races.date')
         ->where(['year' => $seasons])
         ->whereDate('date', '<=', $date)
         ->orderBy('round', 'desc')
         ->take(1)
         ->get();
 
-        $round2 = DB::table('races')
-        ->select('races.round')
-        ->where(['year' => $seasons])
-        ->orderBy('round', 'desc')
-        ->take(1)
-        ->get();
+        
 
+        $date1=date_create($date);
+        $date2=date_create($raceId[0]->date.' '.$raceId[0]->time);
+        $diff=date_diff($date1,$date2);
 
-        if($round < $round2){
-            return $round[0]->round+1;
+        if($diff->format('%d') < '1'){
+            $raceId = DB::table('races')
+            ->select('races.round')
+            ->where(['year' => $seasons])
+            ->whereDate('date', '<', $date)
+            ->orderBy('round', 'desc')
+            ->take(1)
+            ->get();
+            return $raceId[0]->round+1;
         }else{
-            return '-';
+            $raceId = DB::table('races')
+            ->select('races.round')
+            ->where(['year' => $seasons])
+            ->whereDate('date', '<=', $date)
+            ->orderBy('round', 'desc')
+            ->take(1)
+            ->get();
+            return $raceId[0]->round+1;
         }
         
     }
 
 
 
-    public function thisLastGpPodium(){
+    public function thisLastGpPodium($seasons){
 
-        // Change the line below to your timezone!
+        // // Change the line below to your timezone!
+        // date_default_timezone_set('Europe/London');
+        // $date = date('Y/m/d', time());
+        // $date = str_replace("/", '-', $date );
+        // // $date = '2022-03-26';
+
+
+        // $raceId = DB::table('races')
+        // ->select('races.raceId')
+        // ->whereDate('date', '<=', $date)
+        // ->orderBy('date', 'desc')
+        // ->take(1)
+        // ->get();
         date_default_timezone_set('Europe/London');
-        $date = date('Y/m/d', time());
-        $date = str_replace("/", '-', $date );
-        // $date = '2022-03-26';
-
+        $date = date('Y-m-d', time());
+        
 
         $raceId = DB::table('races')
-        ->select('races.raceId')
+        ->select('races.raceId', 'races.time', 'races.date')
+        ->where(['year' => $seasons])
         ->whereDate('date', '<=', $date)
-        ->orderBy('date', 'desc')
+        ->orderBy('round', 'desc')
         ->take(1)
         ->get();
+
+        
+
+        $date1=date_create($date);
+        $date2=date_create($raceId[0]->date.' '.$raceId[0]->time);
+        $diff=date_diff($date1,$date2);
+
+        if($diff->format('%d') < '1'){
+            $raceId = DB::table('races')
+            ->select('races.raceId')
+            ->where(['year' => $seasons])
+            ->whereDate('date', '<', $date)
+            ->orderBy('round', 'desc')
+            ->take(1)
+            ->get();
+            // return $raceId;
+        }else{
+            $raceId = DB::table('races')
+            ->select('races.raceId')
+            ->where(['year' => $seasons])
+            ->whereDate('date', '<=', $date)
+            ->orderBy('round', 'desc')
+            ->take(1)
+            ->get();
+            // return $raceId;
+        }
+
 
 
         $podium = DB::table('results')
@@ -132,7 +208,7 @@ class seasons extends Model
     public function thisNextGpCountdown(){
         // Change the line below to your timezone!
         date_default_timezone_set('Europe/London');
-        $date = date('Y-m-d H:i:s', time());
+        $date = date('Y-m-d', time());
         // $date = '2022-03-26 13:00:00';
 
 

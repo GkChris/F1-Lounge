@@ -180,21 +180,49 @@ class races extends Model
     public function previousRace($seasons){
 
         // Change the line below to your timezone!
+        // date_default_timezone_set('Europe/London');
+        // $date = date('Y/m/d', time());
+        // $date = str_replace("/", '-', $date );
         date_default_timezone_set('Europe/London');
-        $date = date('Y/m/d', time());
-        $date = str_replace("/", '-', $date );
+        $date = date('Y-m-d', time());
         
 
         $raceId = DB::table('races')
-        ->select('races.raceId')
+        ->select('races.raceId', 'races.time', 'races.date')
         ->where(['year' => $seasons])
         ->whereDate('date', '<=', $date)
         ->orderBy('round', 'desc')
         ->take(1)
         ->get();
 
+        
 
-        return $raceId;
+        $date1=date_create($date);
+        $date2=date_create($raceId[0]->date.' '.$raceId[0]->time);
+        $diff=date_diff($date1,$date2);
+
+        if($diff->format('%d') < '1'){
+            $raceId = DB::table('races')
+            ->select('races.raceId')
+            ->where(['year' => $seasons])
+            ->whereDate('date', '<', $date)
+            ->orderBy('round', 'desc')
+            ->take(1)
+            ->get();
+            return $raceId;
+        }else{
+            $raceId = DB::table('races')
+            ->select('races.raceId')
+            ->where(['year' => $seasons])
+            ->whereDate('date', '<=', $date)
+            ->orderBy('round', 'desc')
+            ->take(1)
+            ->get();
+            return $raceId;
+        }
+
+        // return $diff->format("%a day(s), %h hour(s)");
+        // return $raceId;
     }
 
 

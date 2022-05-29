@@ -259,7 +259,7 @@ class SeasonsController extends Controller
 
             //Retrieving last gp podium
             $podium_data = new seasons;
-            $thisLastGpPodium = $podium_data->thisLastGpPodium();
+            $thisLastGpPodium = $podium_data->thisLastGpPodium($seasons);
             // return $thisLastGpPodium;
 
             //Retrieving next race countdown
