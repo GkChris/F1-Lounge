@@ -1,0 +1,324 @@
+.showPost{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 90%;
+    margin: 2rem auto 1rem auto;
+    border: 1px solid grey;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#comm_posts{
+    margin: 2rem 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.comment_section{
+    /* background-color: rgba(0, 0, 0, 0.6);
+    border: 2px silver;
+    border-style: inset;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    margin: 2rem 0 0 0;
+    padding: 2rem 0 0 0;
+    width: 90%;
+}
+
+
+#makePost{
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+}
+
+#makePost p{
+    background: white;
+    color: black;
+    padding: .5rem 1rem .5rem 1rem;
+    border: 1px solid grey;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+}
+
+.postURL,.postTitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.postTitle{
+    margin: .5rem 0 0 0;
+}
+
+.postComment{
+    width: 85%;
+    display: flex;
+    justify-content: start;
+    margin: 0 auto 2rem auto;
+    padding: 1rem 0 1rem 0;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.postComment p{
+    margin: 0 0 0 1.5rem;
+}
+
+.postURL{
+    margin: 0 auto 2rem auto;
+}
+
+.postURL iframe{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 75%;
+    height: 350px;
+}
+
+
+
+.noURL,.noComment{
+    display: none;
+}
+
+#postTags{
+    margin: 0 .5rem 1.3rem .5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.postTags_subDivs{
+    height: 25px;
+    width: 17%;
+    background-color: white;
+    padding: .3rem .3rem 1.6rem .3rem;
+    border-radius: 10px;
+    border: 1px solid grey;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#raceTags{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+#postTags_extra{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#postModal{
+    height: 1px;
+    visibility: hidden;
+    transition: .3s;
+}
+
+
+#postSearch{
+    width: 60%;
+    margin: 1rem auto 0 auto;
+    padding: 0;
+    font-weight: 600;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+}
+
+#postSearch p{
+    margin: .7rem .5rem 0 0;
+}
+
+#selectedTags{
+    width: 49%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid grey;
+    background-color: white;
+    font-weight: 600;
+    font-style: italic;
+    overflow-y: scroll;
+    max-height: 10rem;
+}
+
+#selectedTags p{
+    border-top: 1px solid black;
+    padding: 0 .7rem 0 .7rem;
+    margin: 0 .7rem 0 .7rem;
+    font-size: .7rem;
+    font-weight: normal;
+    font-style: normal;
+}
+
+#selectedTags::before{
+    content: 'Selected';
+    margin-left: 1rem;
+}
+
+#updated_div{
+    width: 49%;
+    margin: 0;
+    padding: 0;
+}
+#search_result_box{
+    width: 100%;
+    height: 6rem;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    border: 1px solid grey;
+    overflow-y: scroll;
+    font-weight: 600;
+    font-style: italic;
+}
+
+#search_result_box::before{
+    content: 'Suggestions';
+    margin-left: 1rem;
+}
+
+
+#suggestions{
+    border-top: 1px solid black;
+    padding: 0 .7rem 0 .7rem;
+    margin: 0 .7rem 0 .7rem;
+    font-weight: normal;
+    font-style: normal;
+    max-height: 5rem;
+}
+
+#suggestions p{
+    margin: .3rem 0 0 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+#searchForm::before{
+    content: "Search";
+}
+
+
+#createPost{
+    visibility: hidden;
+    height: 1px;
+    background-color: white;
+    width: 90%;
+    margin: 0 auto 1rem auto;
+    border: 1px solid grey;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+input[type=text], input[type=url] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0 0 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    width: 20%;
+    background-color: #191970;
+    color: white;
+    padding: 14px 0;
+    margin: 8px auto;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+  
+input[type=submit]:hover {
+    background-color: #4B0082;
+}
+  
+#theForm {
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+
+
+
+#tagReset{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+#tagReset p{
+    background-color: #00FFFF;
+    padding: .3rem .7rem .3rem .7rem;
+    border: 1px solid silver;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#tagReset p:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+@media only screen and (max-width: 1199.98px){
+    .postTags{
+        margin: 1rem 0 0 .7rem;
+    }
+
+    .postDetails{
+        margin: .5rem 1rem 0 1rem;
+    }
+
+    .postTags p{
+        margin: .3rem .7rem 0 0;
+    }
+
+    .postDetails .postDate, .postDetails .postUser{
+        margin: .5rem 0.7rem 0 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .postTags{
+        display: flex;
+        justify-content: start;
+        margin: 0 0 0 .7rem;
+    }
+
+    .postDetails{
+        display: flex;
+        justify-content: space-between;
+        margin: 1.3rem 1.3rem 0 1.3rem;
+    }
+
+    .postDetails .postDate, .postDetails .postUser{
+        margin: .5rem 0.7rem 0 0;
+    }
+
+    .postTags p{
+        margin: 0 0 0 .7rem;
+    }
+}

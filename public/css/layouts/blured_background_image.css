@@ -1,0 +1,32 @@
+.cont{
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s;
+}
+
+.background_image_blured{
+    overflow: hidden;
+    position:absolute; 
+    top:0px; right:0px; 
+    bottom:0px; 
+    left:0px;
+    filter: blur(16px);
+    opacity: 0.8;
+    z-index: -1;
+
+    /* background-image: url('');  BACKGROUND IMAGE REQUIRED IN BLADE */       
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;      
+
+
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+
+.content{
+    min-height: 100vh;
+    min-width: 100vw;
+}

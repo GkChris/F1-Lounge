@@ -1,0 +1,61 @@
+.search_box{
+    margin-left: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+#result_box{
+    visibility: hidden;
+    margin: 1rem 0 0 10rem;
+    overflow-y: scroll;
+    background-color: white;
+    border: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: 1px;
+    width: 350px;
+    transition: .3s;
+}
+
+
+.search_box p{
+    margin: 0 0 .2rem 0;
+    text-decoration: underline;
+}
+
+#searchP{
+    margin: .6rem .4rem 0 0;
+    padding: .5rem .5rem 0 0;
+    border-right: 1px solid black;
+    font-weight: 600;
+    cursor: default;
+}
+
+#searchForm{
+    margin: .8rem 0 .4rem 0;
+    padding: .2rem .3rem .1rem .3rem;
+}
+
+#result_box a{
+    margin: .5rem 0 0 .5rem;
+}
+
+#result_box a:link{
+    color: black;
+    text-decoration: none;
+}
+
+#result_box a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+#result_box a:hover{
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#result_box a:active{
+    color: black;
+    text-decoration: none;
+}

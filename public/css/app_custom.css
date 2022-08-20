@@ -1,0 +1,87 @@
+.navbar-brand div img{
+    height: 35px;
+}
+
+footer{
+    width: 100%;  
+    background-color: grey; 
+    border-top: 2px groove black;
+}
+
+#my_profile{
+    color:black; 
+    font-weight:600;
+}
+
+#logout_profile{
+    color:red; 
+    font-weight:600;
+}
+
+.footer_links{
+    text-align: center;
+}
+
+.footer_info{
+    color:silver;
+}
+
+.footer_info a{
+    color:white;
+    opacity: 0.9
+}
+
+.footer_links{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+}
+
+
+.footer_links p{
+    margin: 0;
+    padding: 0;
+}
+.footer_links a{
+    margin-top: .6rem;
+    font-size: 1rem;
+    color: white;
+    opacity: 0.9;
+}
+.footer_links #theGal{
+    margin-top: 0;
+    font-size: 1.3rem;
+    color: white;
+    opacity: 1;
+}
+
+
+
+.footer_info p{
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.footer_links img{
+    position: relative;
+    top: 0;
+    left:0;
+    height: 35px;
+}
+
+@media only screen and (max-width: 1199.98px){
+    .mobile_view_drop{
+        display: block;
+    }
+    .desktop_view_drop{
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .desktop_view_drop{
+        display: block;
+    }
+    .mobile_view_drop{
+        display: none !important;
+    }
+}

@@ -1,0 +1,129 @@
+.constructors_part_grid .col-xl-6{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+
+
+.constructors_part_container{
+    height: 120px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: rgba(0, 0, 0, .6);
+    transition: .3s;
+    cursor: pointer;
+    display: flex;
+}
+
+
+.constructors_part_container:hover{
+    transform: scale(1.1);
+    background-color: black;
+}
+
+.constructor_image{
+    width: 35%;
+    border-right: 1px solid silver;
+}
+
+.constructor_image img{
+    margin: 18px 5% 18px 5%;
+    width: 90%;
+    height: 70%;
+    border: 1px solid grey;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.constructor_info{
+    width: 64.98%;
+    color: white;
+}
+
+.constructor_info p{
+    margin: 0 .5rem 0 .5rem;
+    color: #DCDCDC;
+}
+
+.constructors_part_container:link {
+    text-decoration: none;
+    color: inherit;
+}
+  
+.constructors_part_container:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.constructors_part_container:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.constructors_part_container:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.constructor_info{
+    text-align: center;
+}
+
+@media only screen and (max-width: 767.98px){
+    .constructors_part_container{
+        width: 100%;
+    }
+
+    .constructors_part_grid .col-xl-6{
+        width: 100%;
+        padding: 0;
+    }
+
+    #dob{
+        display: none;
+    }
+
+    .constructor_info h4{
+        margin: 2.2rem .5rem .2rem .5rem;
+    }
+
+    .constructor_info p{
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .constructors_part_container{
+        width: 75%;
+    }
+
+    .constructors_part_grid .col-xl-6{
+        width: 100%;
+        padding: 0;
+    }
+
+    .constructor_info h4{
+        margin: 2.2rem .5rem .2rem .5rem;
+    }
+
+    .constructor_info p{
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .constructor_part_container{
+        width: 75%;
+    }
+
+    .constructor_info h4{
+        margin: 2.2rem .5rem .2rem .5rem;
+    }
+
+    .constructor_info p{
+        margin: 0;
+    }
+
+}

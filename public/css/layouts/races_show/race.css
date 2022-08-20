@@ -1,0 +1,115 @@
+.table{
+    cursor: default;
+}
+
+
+.results_table .table tbody tr{
+    cursor: pointer;
+}
+
+.table tbody{
+    background-color: #F0F8FF;
+}
+
+.table a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.table a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.table a:hover{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.table a:active{
+    color: black;
+    text-decoration: none;
+}
+
+.table tbody tr th{
+    vertical-align: middle;
+}
+
+.table tbody tr td{
+    vertical-align: middle;
+}
+
+.table tr:hover{
+    background-color: #DCDCDC;;
+}
+
+
+@media only screen and (max-width: 1199.98px){
+    .results_table{
+        margin: 2rem 0 0 0 !important;
+        width: 100%;
+    }
+
+    .pit_stops_table{
+        margin: 2rem 0 0 0 !important;
+        width: 100%;
+    }
+
+    .fastest_laps_table{
+        margin: 2rem 0 0 0 !important;
+        width: 100%;
+    }
+
+    .qualifying_table{
+        margin: 2rem 0 0 0 !important;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .results_table{
+        margin: 2rem 0 0 0 !important;
+        width: 95%;
+        display: flex;
+        justify-content:center;
+    }
+    
+    .results_table table{
+        width: 100%;
+    }
+
+    .pit_stops_table{
+        margin: 2rem 0 0 0 !important;
+        width: 95%;
+        display: flex;
+        justify-content:center;
+    }
+    
+    .pit_stops_table table{
+        width: 100%;
+    }
+
+    .fastest_laps_table{
+        margin: 2rem 0 0 0 !important;
+        width: 95%;
+        display: flex;
+        justify-content:center;
+    }
+    
+    .fastest_laps_table table{
+        width: 100%;
+    }
+
+    .qualifying_table{
+        margin: 2rem 0 0 0 !important;
+        width: 95%;
+        display: flex;
+        justify-content:center;
+    }
+    
+    .qualifying_table table{
+        width: 100%;
+    }
+}

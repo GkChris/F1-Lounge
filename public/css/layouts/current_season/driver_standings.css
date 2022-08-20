@@ -1,0 +1,58 @@
+.table{
+    cursor: default;
+}
+
+.table tbody{
+    background-color: #F0F8FF;
+}
+
+.table a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.table a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.table a:hover{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.table a:active{
+    color: black;
+    text-decoration: none;
+}
+
+.table tbody tr th{
+    vertical-align: middle;
+}
+
+.table tbody tr td{
+    vertical-align: middle;
+}
+
+
+@media only screen and (max-width: 1199.98px){
+    .drivers_table{
+        margin: 2rem 0 0 0 !important;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .drivers_table{
+        margin: 2rem 0 0 0 !important;
+        width: 95%;
+        display: flex;
+        justify-content:center;
+    }
+    
+    .drivers_table table{
+        width: 100%;
+    }
+}
