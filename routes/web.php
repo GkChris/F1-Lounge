@@ -49,9 +49,6 @@ Route::get('/circuit_search', 'SearchController@circuitSearch');
 Route::get('/all_search', 'SearchController@searchAll');
 Route::get('/search_username', 'SearchController@searchUsername');
 Route::get('/search_mail', 'SearchController@searchMail');
-//END OF SEARCH ROUTES
-
-
 
 
 //WEBAPP ROUTES
@@ -99,7 +96,6 @@ Route::get('/races', 'RacesController@index');
 Route::get('/{year}/{round}', 'RacesController@show');
 
 
-//END OF //WEBAPP ROUTES
 
 
 
