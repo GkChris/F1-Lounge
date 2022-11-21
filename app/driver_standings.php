@@ -66,17 +66,21 @@ class driver_standings extends Model
 
     public function thisCurrentSeasonLastRaceId($races){
 
+        $max = 0;
         foreach($races as $res){
-            $data = DB::table('driver_standings')
-            ->select('raceId')
-            ->where(['raceId' => $res->raceId])
-            ->orderBy('raceId', 'desc')
-            ->take(1)
-            ->get();
-            if(isset($data[0])){
-                break;
+            // $data = DB::table('driver_standings')
+            // ->select('raceId')
+            // ->where(['raceId' => $res->raceId])
+            // ->orderBy('raceId', 'desc')
+            // ->take(1)
+            // ->get();
+            // if(isset($data[0])){
+            //     break;
+            // }
+            if($res->raceId > $max){
+                $max = $res->raceId;
             }
         }
-        return $data;
+        return $max;
     }
 }

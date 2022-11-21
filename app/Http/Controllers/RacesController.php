@@ -94,11 +94,12 @@ class RacesController extends Controller
         //Retrieving last race of the season with standings available 
         $current_this_season_standings_id = new driver_standings;
         $thisCurrentSeasonLastRaceId = $current_this_season_standings_id->thisCurrentSeasonLastRaceId($thisLastRaces);
+        // return $thisCurrentSeasonLastRaceId;
         // return $thisCurrentSeasonLastRaceId[0]->raceId;
 
         //Retrieving driver's standings data of that season after end
         $driverStandingsEndOfSeason_data = new driver_standings;
-        if($thisCurrentSeasonLastRaceId[0]->raceId != $thisLastRace[0]->raceId){
+        if($thisCurrentSeasonLastRaceId != $thisLastRace[0]->raceId){
             $thisSeasonDriverStandings = $driverStandingsEndOfSeason_data->thisDriverStandings($thisCurrentSeasonLastRaceId);
             // return $thisSeasonDriverStandings;
         }else{
@@ -116,7 +117,7 @@ class RacesController extends Controller
         
         //Retrieving constructor's standings data of that season after end
         $constructorSeasonStandings_data = new constructor_standings;
-        if($thisCurrentSeasonLastRaceId[0]->raceId != $thisLastRace[0]->raceId){
+        if($thisCurrentSeasonLastRaceId != $thisLastRace[0]->raceId){
             $thisSeasonConstructorStandings = $constructorSeasonStandings_data->thisConstructorStandings($thisCurrentSeasonLastRaceId);
             // return $thisSeasonConstructorStandings;
         }else{
@@ -176,12 +177,22 @@ class RacesController extends Controller
         $thisSprintFullResults = $sprint_results_data->thisSprintFullResults($thisRace->raceId);
         // return $thisSprintFullResults;
         
-        if($thisCurrentSeasonLastRaceId[0]->raceId != $thisLastRace[0]->raceId){
+        // if($thisCurrentSeasonLastRaceId[0]->raceId != $thisLastRace[0]->raceId){
+        //     $isFinalStandings = false;
+        // }else{
+        //     $isFinalStandings = true;
+        // }
+        // if(!$isFinalStandings && $thisRace->raceId == $thisCurrentSeasonLastRaceId[0]->raceId){
+        //     $isFinalOfCurrent = true;
+        // }else{
+        //     $isFinalOfCurrent = false;
+        // }
+        if($thisCurrentSeasonLastRaceId != $thisLastRace[0]->raceId){
             $isFinalStandings = false;
         }else{
             $isFinalStandings = true;
         }
-        if(!$isFinalStandings && $thisRace->raceId == $thisCurrentSeasonLastRaceId[0]->raceId){
+        if(!$isFinalStandings && $thisRace->raceId == $thisCurrentSeasonLastRaceId){
             $isFinalOfCurrent = true;
         }else{
             $isFinalOfCurrent = false;
