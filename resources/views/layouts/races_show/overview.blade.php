@@ -66,7 +66,7 @@
                         <a href="/constructors/{{ $team->constructorRef }}"><div class="testo_content text-center">
                             <p>Winner's constructor</p>
                             <h5>{{ $team->name }}</h5>
-                            <img src="/images/jpg/champion_constructors/{{ $team->constructorRef }}.jpg" onerror="this.onerror=null;this.src='/images/jpg/drivers/not_found.jpg';">
+                            <img src="/images/jpg/constructors/{{ $team->constructorRef }}.jpg" onerror="this.onerror=null;this.src='/images/jpg/drivers/not_found.jpg';">
                         </div></a>
                     </div>
                 </div>

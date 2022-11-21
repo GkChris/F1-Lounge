@@ -28,7 +28,7 @@
                         <p>Constructors' Champion</p>
                         <h5>{{ $championTeam->name }}</h5>
                         
-                            <img id="con_img" src="/images/jpg/champion_constructors/{{ $championTeam->constructorRef }}.jpg" onerror="this.onerror=null;this.src='/images/jpg/drivers/not_found.jpg';">
+                            <img id="con_img" src="/images/jpg/constructors/{{ $championTeam->constructorRef }}.jpg" onerror="this.onerror=null;this.src='/images/jpg/drivers/not_found.jpg';">
                         
                     </div></a>
                 @endif

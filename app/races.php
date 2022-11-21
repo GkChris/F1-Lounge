@@ -122,7 +122,7 @@ class races extends Model
         $raceId = DB::table('races')
         ->select('races.raceId')
         ->where(['year' => $year])
-        ->orderBy('round', 'desc')
+        ->orderBy('raceId', 'desc')
         ->take(1)
         ->get();
         return $raceId;

@@ -38,7 +38,7 @@ class constructor_standings extends Model
         $data = DB::table('constructor_standings')
         ->join('constructors', 'constructors.constructorId', '=', 'constructor_standings.constructorId')
         ->select('constructor_standings.*', 'constructors.*')
-        ->where(['constructor_standings.raceId' => $res2])
+        ->where(['constructor_standings.raceId' => strval($res2)])
         ->orderBy('position', 'asc')
         ->get();
 

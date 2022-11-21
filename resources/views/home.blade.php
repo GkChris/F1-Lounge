@@ -31,8 +31,8 @@
         
             <div class="col-xl-4 d-flex justify-content-center">
                 <div class="testo">
-                    <a href="/2022"><div class="testo_content text-center">
-                        <p>2022 Season</p>
+                    <a href="/2023"><div class="testo_content text-center">
+                        <p>2023 Season</p>
                         @if ($agent->isDesktop())
                             <img class="desktop_image_home" src="/images/jpg/home/current_season.jpg">
                         @endif

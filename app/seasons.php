@@ -43,7 +43,6 @@ class seasons extends Model
 
     public function thisNumberOfCountries($season){     //return the number of countries participated in that season
 
-
         $for_noc = DB::table('races')
         ->join('circuits', 'circuits.circuitId', '=', 'races.circuitId')
         ->select('circuits.country')

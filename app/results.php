@@ -49,13 +49,12 @@ class results extends Model
         }
 
 
-        
         $data = DB::table('results')
         ->join('drivers', 'drivers.driverId', '=', 'results.driverId')
         ->join('constructors', 'constructors.constructorId', '=', 'results.constructorId')
         ->join('status', 'status.statusId', '=', 'results.statusId')
         ->select('drivers.nationality as driverNationality', 'results.*', 'drivers.*', 'constructors.*', 'status.*')
-        ->where(['results.raceId' => $res2])
+        ->where(['results.raceId' => strval($res2)])
         ->orderBy('results.position', 'asc')
         ->get();
 

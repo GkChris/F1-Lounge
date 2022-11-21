@@ -35,8 +35,11 @@ class SeasonsController extends Controller
 
     public function show($seasons)
     {
+        if($seasons == '2023'){
+            return view('seasons.winter_break');
+        }
         
-        if($seasons != '2022'){     //all seasons (no current)
+        if($seasons != '2023'){     //all seasons (no current)
             //Retrieving season data
             $season_data = new seasons;
             $thisSeason = $season_data->thisSeason($seasons);

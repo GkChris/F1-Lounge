@@ -55,7 +55,7 @@ class sprint_results extends Model
             ->join('constructors', 'constructors.constructorId', '=', 'sprint_results.constructorId')
             ->join('status', 'status.statusId', '=', 'sprint_results.statusId')
             ->select('drivers.nationality as driverNationality', 'sprint_results.*', 'drivers.*', 'constructors.*', 'status.*')
-            ->where(['sprint_results.raceId' => $res2])
+            ->where(['sprint_results.raceId' => strval($res2)])
             ->orderBy('sprint_results.position', 'asc')
             ->get();
     

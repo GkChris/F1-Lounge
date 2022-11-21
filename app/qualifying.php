@@ -46,7 +46,7 @@ class qualifying extends Model
         ->join('drivers', 'drivers.driverId', '=', 'qualifying.driverId')
         ->join('constructors', 'constructors.constructorId', '=', 'qualifying.constructorId')
         ->select('qualifying.*', 'drivers.*', 'constructors.*')
-        ->where(['qualifying.raceId' => $res2])
+        ->where(['qualifying.raceId' => strval($res2)])
         ->orderBy('qualifying.position', 'asc')
         ->get();
 

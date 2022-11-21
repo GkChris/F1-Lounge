@@ -166,7 +166,7 @@ class constructors extends Model
         ->join('results', 'results.constructorId', '=', 'constructors.constructorId')
         ->select('constructors.*')
         ->distinct()
-        ->where(['results.raceId' => $raceId])
+        ->where(['results.raceId' => strval($raceId)])
         ->get();
 
         return $data;
@@ -367,6 +367,7 @@ class constructors extends Model
     
         $data = DB::table('seasons')
         ->select('year')
+        ->whereBetween('year', ['1950', '2022'])
         ->get();
 
         

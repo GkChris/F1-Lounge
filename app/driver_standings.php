@@ -39,7 +39,7 @@ class driver_standings extends Model
         $data = DB::table('driver_standings')
         ->join('drivers', 'drivers.driverId', '=', 'driver_standings.driverId')
         ->select('driver_standings.*', 'drivers.*')
-        ->where(['driver_standings.raceId' => $res2])
+        ->where(['driver_standings.raceId' => strval($res2)])
         ->orderBy('position', 'asc')
         ->get();
 

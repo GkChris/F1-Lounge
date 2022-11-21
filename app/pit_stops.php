@@ -39,7 +39,7 @@ class pit_stops extends Model
         $data = DB::table('pit_stops')
         ->join('drivers', 'drivers.driverId', '=', 'pit_stops.driverId')
         ->select('pit_stops.*', 'drivers.*')
-        ->where(['pit_stops.raceId' => $res2])
+        ->where(['pit_stops.raceId' => strval($res2)])
         ->orderBy('pit_stops.time', 'asc')
         ->get();
 

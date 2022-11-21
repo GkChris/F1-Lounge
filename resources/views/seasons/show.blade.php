@@ -195,7 +195,7 @@
             <div class="col-12">
                 <div class="page_info d-flex flex-column text-center">
                     <h1>{{ $thisSeason->year }} Championship </h1>
-                    <h4 style="padding: 0 0 .5rem 0;">{{ $thisSeason->rounds }} Rounds , {{ $thisSeason->noc }} different countries , {{ $thisSeason->drivers }} Drivers 
+                    <h4 style="padding: 0 0 .5rem 0;">{{ $thisSeason->rounds }} Rounds, {{ $thisSeason->drivers }} Drivers 
                     @if($thisSeason->year > 1957)    , {{ $thisSeason->constructors }} Teams @endif</h4>
                     {{-- is supposed to be $thisSeason->intenseLelel --}}
                     {{-- <h5>Championship instense level: chaos</h5> --}}

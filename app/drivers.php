@@ -257,6 +257,7 @@ class drivers extends Model
     
         $data = DB::table('seasons')
         ->select('year')
+        ->whereBetween('year', ['1950', '2022'])
         ->get();
 
         
@@ -270,6 +271,7 @@ class drivers extends Model
             ->get();
             array_push($lastRacesId, $data2[0]->raceId);
         }
+        
 
         // return $lastRacesId;
         $allChamps = [];
